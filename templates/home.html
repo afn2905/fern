@@ -26,11 +26,17 @@
   <h2>INFORMATION:</h2>
   <p>Teacher: </p>
   <h2>AVAILABLE DATES:</h2>
-  <p>DATE</p>
+  <p>
+  {% for date in dates %}
+    {% include 'dateentry.html' %}
+  {% endfor %}
+  </p>
   </div>
 
 <!--can also just <div style="text-align: center;"> or something-->
 <!--or class="body" within tag then .body {} when defining style for text with that class-->
+<!--{% if 'date' in date %}-->
+<!--{% endif %}-->
 </body>
 
 </html>
